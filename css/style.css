@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 /* regole generali */
-
+body{
+    margin-top: 70px;
+}
 a{
     text-decoration: none;
     color: #ffff;
@@ -20,7 +22,11 @@ li{
 }
 header{
     background-color: rgb(226, 126, 64);
-  
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 30;
 }
 .container-header{
     padding:15px 0;
@@ -69,7 +75,6 @@ header{
 .img-hover:hover .img1b {
     display: block;
 }
-
 .heart{
     position: absolute;
     top: 10px;
@@ -78,8 +83,12 @@ header{
     font-size: 30px;
     width: 40px;
     text-align: center;
+    cursor: pointer;
 }
-
+.heart:hover{
+    color: red;
+    transition: 0.5s;
+}
 .discount-item{
     display: flex;
     position: absolute;
@@ -140,5 +149,6 @@ footer{
 .color-white{
     color: white;
 }
+
 
 
