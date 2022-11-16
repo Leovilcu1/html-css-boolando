@@ -1,0 +1,144 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* regole generali */
+a{
+    text-decoration: none;
+    color: rgb(30, 29, 29);
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.container-header{
+    padding:15px 0;
+}
+.container-top{
+    display: flex;
+    justify-content: space-between;
+}
+.container-top > *{
+    width: calc(100%/3);
+    padding:5px 0;
+} 
+.logo-header{
+    text-align: center;
+}
+.icon-header{
+    text-align: right;
+}
+
+/* inizio main */
+
+.container-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container-main > div{
+    width: 33%;
+    position:relative;
+}
+.container-main div img{
+    width: 100%;
+}
+.heart{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.discount-item{
+    display: flex;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+}
+.discount{
+    background-color: red;
+    color:#ffff;
+    text-align: center;
+}
+.sost{
+    background-color: green;
+    color: #ffff;
+    text-align: center;
+    margin-left: 5px;
+}
+.container-big{
+    margin-top: 40px;
+}
+
+/* footer */
+footer{
+    padding-top:40px;
+}
+.footer{
+    padding-top: 30px;
+}
+.items-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items-footer >*{
+    width: 50%;
+    color: #ffff;
+}
+#content-left-footer{
+    font-size: 13px;
+}
+#content-left-footer > span{
+    font-size: 16px;
+    font-weight: 700;
+}
+#content-right-footer{
+    text-align: right;
+}
+#content-right-footer > span{
+    padding-right: 20px;
+    font-size:13px;
+}
+
+
+
+
+
+
+
+
+/* debug */
+.debug header{
+    background-color: orange;
+    
+}
+.debug .border{
+    border: 1px dashed black;
+}
+
+.debug .container-top{
+    background-color: rgb(232, 114, 114);
+}
+
+.debug .container-main div img{
+    background-color: aqua;
+    height:400px;
+}
+.debug .container-big{
+    background-color: lightgray;
+}
+.debug .footer{
+    background-color: rgb(3, 3, 2);
+    height: 100px;
+}
+.debug .items-footer{
+    background-color: rgb(133, 124, 124);
+}
+.debug #content-left-footer{
+
+} 
