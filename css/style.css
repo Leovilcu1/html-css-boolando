@@ -5,55 +5,61 @@
     box-sizing: border-box;
 }
 /* regole generali */
-body{
-    margin-top: 70px;
-}
-a{
-    text-decoration: none;
-    color: #ffff;
-    padding: 10px 10px 10px 0;
-}
-li{
-    list-style: none;
-}
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
 header{
-    background-color: rgb(226, 126, 64);
+    background-color: orangered;
+    padding: 20px 10px;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
-    z-index: 30;
+    width: 100%;
 }
-.container-header{
-    padding:15px 0;
+.container{
+    max-width: 80%;
+    margin: 0 auto;
 }
-.container-top{
+.header-container{
     display: flex;
     justify-content: space-between;
-}
-.container-top > *{
-    width: calc( 100% / 3);
-} 
-.logo-header{
-    text-align: center;
-    width: 150px;
-}
-.nav-header{
-    display: flex;
     align-items: center;
+    color: #fff;
 }
-.icon-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.header-container div ul{
+    list-style: none;
+    
 }
+.header-container div ul li{
+    display: inline-block;
+}
+.header-container div ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+.header-container div ul li a:hover{
+    text-decoration: underline;
+}
+.logo-header a img{
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* inizio main */
-
+main{
+    margin-top: 70px;
+}
 .container-main{
     display: flex;
     justify-content: space-between;
@@ -73,7 +79,7 @@ header{
     display: none;
 }
 .img-hover:hover .img1b {
-    display: block;
+    display:inline-block;
 }
 .heart{
     position: absolute;
